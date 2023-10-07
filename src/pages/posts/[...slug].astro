@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Footer from "../../components/Footer.vue";
-import HeaderTop from "../../components/HeaderTop";
+import HeaderTop from '../../components/HeaderTop'
 import Header from "../../components/Header";
 import Social from "../../components/Social.svelte";
 import Base from "../../layouts/Base.astro";
@@ -19,7 +19,7 @@ const { Content } = await post.render();
 ---
 
 <Base title="AstroBuild.tips">
-	<HeaderTop client:load />
+  <HeaderTop client:load />
 	<Header title="AstroBuild.tips" />
 	<Content />
 	<Social />
